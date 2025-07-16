@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex - Maler und Reinigung</title>
+  <style>
+    body {
+      font-family: Montserrat, sans-serif;
+      margin: 0;
+      background-color: #faf9f8;
+    }
+    header {
+      background-color: #006bb2;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    nav {
+      background-color: #0077b2;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #006bb2;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+    .whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Firmenlogo" style="max-width: 150px;" />
+    <h1>Willkommen bei<br>Alex - Maler und Reinigung</h1>
+    <p>Zuverlässig. Sauber. Preiswert.</p>
+    <a href="javascript:void(0)" id="show-form-btn" class="cta-button">Jetzt Angebot anfordern</a>
+  </header>
+
+  <nav>
+    <a href="#uber-uns">Über uns</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="angebot-form" style="display: none;">
+    <h2>Jetzt Angebot anfordern</h2>
+    <form action="https://formsubmit.co/kontakt@alex-malerundreinigung.ch" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://alex-malerundreinigung.ch/#dankeschön">
+
+      <label for="name">Name und Vorname:</label>
+      <input type="text" id="name" name="Name und Vorname" required>
+
+      <label for="email">Email adresse:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="Leistungsbeschreibung">Leistungsbeschreibung:</label>
+      <textarea id="Leistungsbeschreibung" name="Leistungsbeschreibung" rows="4" required></textarea>
+
+      <button type="submit">Senden</button>
+    </form>
+  </section>
+
+  <section id="uber-uns">
+    <h2>Über uns</h2>
+    <p>Wir sind ein zuverlässiges Unternehmen mit Sitz in Zuchwil, das auf professionelle Malerarbeiten und Reinigungsdienste spezialisiert ist. Qualität, Pünktlichkeit und Kundenzufriedenheit stehen bei uns an erster Stelle. Ob Renovierung, Umzug oder regelmässige Pflege - mit unserer Erfahrung und Sorgfalt sorgen wir für perfekte Ergebnisse in Ihrem Zuhause oder Büro.</p>
+  </section>
+
+  <section id="leistungen">
+    <h2>Unsere Leistungen</h2>
+    <ul>
+      <p>Malerarbeiten:</p>
+      <li>Innen- und Aussenarbeiten</li>
+      <li>Lackieren von Türen, Fenstern und Zäunen</li>
+      <li>Ausbesserung und Reparatur von Wänden</li>
+      <li>Abriebarbeiten und Vorbereitung der Oberflächen</li>
+      <p>Reinigungsservice:</p>
+      <li>Reinigung von Wohnungen und Häusern</li>
+      <li>Büroreinigung</li>
+      <li>Umzugsreinigung</li>
+      <li>Fassadenreinigung</li>
+      <p>Komplettservice:</p>
+      <li>Malerarbeiten und Reinigung aus einer Hand</li>
+      <li>Wir bieten Ihnen einen Komplettservice für Renovierung, Einzug oder Auszug - mit perfekt aufeinander abgestimmten Leistungen in den Bereichen Malerarbeiten und Reinigung.</li>
+      <li>Das bedeutet für Sie: Ein Ansprechpartner, ein Team, ein reibungsloser Ablauf</li>
+      <li>Zeit- und kostensparend - alles aus einer Hand</li>
+      <li>Schnell, sauber und zuverlässig</li>
+    </ul>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <p>Vorher und Nachher...</p>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Telefon: +41 77 977 98 03</p>
+    <p>Email: kontakt@alex-malerundreinigung.ch</p>
+    <a class="whatsapp" href="https://wa.me/41779779803" target="_blank">Kontaktiere uns über WhatsApp</a>
+    <br><br>
+  </section>
+
+  <section id="dankeschön" style="display: none; text-align: center;">
+    <h2>Vielen dank!</h2>
+    <p>Ihre Nachricht wurde erfolgreich gesendet. Wir werden Ihnen in Kürze antworten.</p>
+  </section>
+
+  <script>
+    document.getElementById("show-form-btn").addEventListener("click", function () {
+      const form = document.getElementById("angebot-form");
+      form.style.display = (form.style.display === "none") ? "block" : "none";
+      form.scrollIntoView({ behavior: "smooth" });
+    });
+
+    if (window.location.hash === "#dankeschön") {
+      document.getElementById("dankeschön").style.display = "block";
+      const form = document.getElementById("angebot-form");
+      if (form) form.style.display = "none";
+      document.getElementById("dankeschön").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+  <footer style="text-align: center; padding: 20px; background-color: #f0f0f0; font-size: 14px; color: #555;">
+    &copy; 2025 Alex - Maler & Reinigung. Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
